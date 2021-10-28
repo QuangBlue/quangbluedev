@@ -25,9 +25,10 @@ const String prImg = 'assets/images/pr.png';
 const String pr1Img = 'assets/images/pr1.png';
 const String pr2Img = 'assets/images/pr2.png';
 const String face1 = 'assets/images/face1.png';
+const String qbLogo = 'assets/images/qb_bg.png';
 
 const String linkCV =
-    'https://drive.google.com/file/d/1e6M7WedtUXVuxigpnFcswdggx1m-Nz8A/view';
+    'https://drive.google.com/file/d/10m2HI6txh3NIr6d3TUMOnktAN74KPOUg/view';
 
 const String nameImg = 'QB';
 const String summary =

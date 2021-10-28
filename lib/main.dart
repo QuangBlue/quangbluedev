@@ -20,6 +20,7 @@ class MyPortfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Quang Blue Flutter Developers',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'montserrat',
@@ -89,13 +90,23 @@ class Menu extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            MenuItem(
-              label: 'QB',
+            InkWell(
               onTap: () {
                 Get.find<MainController>()
                     .scrollToItem(mainController.topBannerKey);
               },
+              child: Image.asset(
+                qbLogo,
+                height: 50,
+              ),
             ),
+            // MenuItem(
+            //   label: 'QB',
+            //   onTap: () {
+            //     Get.find<MainController>()
+            //         .scrollToItem(mainController.topBannerKey);
+            //   },
+            // ),
             MenuItem(
               label: 'WORK',
               onTap: () {
@@ -1664,19 +1675,15 @@ class Footer extends StatelessWidget {
       ),
       color: colorDarkBlue,
       child: Column(
-        children: const <Widget>[
-          Text(
-            nameImg,
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: fontSizeLarge,
-              color: colorWhite,
-            ),
+        children: <Widget>[
+          Image.asset(
+            qbLogo,
+            height: 80,
           ),
-          SizedBox(
+          const SizedBox(
             height: defaultPadding,
           ),
-          SizedBox(
+          const SizedBox(
             width: 400,
             child: Text(
               footerLogan,
@@ -1687,16 +1694,16 @@ class Footer extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: defaultPadding * 4,
           ),
-          Divider(
+          const Divider(
             color: colorWhite,
           ),
-          SizedBox(
+          const SizedBox(
             height: defaultPadding,
           ),
-          Text(
+          const Text(
             footerText,
             style: TextStyle(
               color: colorWhite,
